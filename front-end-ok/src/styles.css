@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+/* Variables */
+/* Mixins */
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+    margin: 20px;
+  }

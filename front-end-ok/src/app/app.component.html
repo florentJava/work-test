@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="header">
+      <h1>To-Do List</h1>
+      <div class="status">
+          <span id="status-indicator" class="online"></span>
+          <span id="status-text">En ligne</span>
+      </div>
+  </div>
+  <form  [formGroup]="tacheForm"  (ngSubmit)="onSubmit()">
+      <input type="text" id="task-name" placeholder="Nom de la tâche" formControlName="nom" required>
+      <input type="text" id="task-desc" placeholder="Description de la tâche" formControlName="desc" required>
+      <button type="submit"><i class="fas fa-plus"></i> Ajouter</button>
+  </form>
+
+  <app-tache-list></app-tache-list>
+
+</div>
+
+
